@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".casa"
+    android:background="#ADD8E6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="#ADD8E6"
+        android:onClick="Calcular"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:background="#0000FF"
+            android:gravity="center"
+            android:text="Casa"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/veja_multiuso" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkVeja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Veja Multiuso - R$6,99"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/toalha_de_banho" />
+
+        <CheckBox
+            android:id="@+id/chkToalha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jogo de Toalha de Banho Santista Royal R$69,90"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bombril" />
+
+        <CheckBox
+            android:id="@+id/chkAssolan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assolan 1un R$2,00"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/pano_de_ch_o"/>
+
+        <CheckBox
+            android:id="@+id/chkPano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pano de Chão 1un R$5,00"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/btTotalcasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Total"
+            android:text="TOTAL" />
+
+        <EditText
+            android:id="@+id/edtTotalcasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="TOTAL"
+            android:inputType="textPersonName"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+</ScrollView>
